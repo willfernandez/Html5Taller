@@ -5,7 +5,7 @@
 <ul>
 <br />
 <br />
-<li>**Proyecto de pagina web aplicando lo aprendido en html5 y CSS3 + jquery =)**</li>
+<li>**Proyecto de página web aplicando lo aprendido en html5 y CSS3 + jquery =)**</li>
 
 
 
