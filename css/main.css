@@ -11,6 +11,7 @@ textarea {
 }
 
 body {
+    font-family:'Yanone Kaffeesatz', sans-serif;
     font-size: 1em;
     line-height: 1.4;
 }
@@ -24,7 +25,10 @@ body {
     background: #b3d4fc;
     text-shadow: none;
 }
-
+header{
+    height: 178px;
+    margin: 0 auto;
+}
 hr {
     display: block;
     height: 1px;
@@ -55,19 +59,38 @@ textarea {
     padding: 0.2em 0;
 }
 
+#banercito .datos{
+    height: 280px;
+    position: relative;
+    z-index: 4;
+}
+#banercito {
+    background-image: url("../img/banner.jpg");
+    z-index: 1;
+}
+#banercito .imagen{
+    background: url("../img/caption-bg.png") right;
+    right: 1px;
+    top: 10px;
+    color: #fff;
+    opacity: 1;
+    width: 274px;
+    height: 222px;
+    z-index: 8;
+}
+
 
 /* ===== Initializr Styles ==================================================
    Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
    ========================================================================== */
 
 body {
-    background: #3c4043;
     font-family: 'open sans',Arial,Sans-serif;
     font-size: 16px;
     }
 
 .cuerpo{
-background: #fff;
+background: url(../img/wrapper-bg.jpg) top center repeat-y;
 margin: 0 auto;
 max-width: 1000px;
 position: relative;
@@ -82,8 +105,12 @@ position: relative;
    =================== */
 
 .header-container {
-    border-bottom: 20px solid #e44d26;
+    background-image: url(../img/back-sup.png);
+    background-position: center top;
+    background-repeat: no-repeat;
     max-width: 1000px;
+
+
 }
 
 .footer-container,
@@ -91,7 +118,7 @@ position: relative;
     border-top: 20px solid #e44d26;
 }
 
-.header-container,
+
 .footer-container,
 .main aside {
     background: #f16529;
@@ -99,6 +126,19 @@ position: relative;
 
 .title {
     color: white;
+}
+
+.logo{
+    background-image: url(../img/logo.png);
+    background-size: 390px, 300px 300px;
+    float: left;
+    height: 69px;
+    margin: 0 0 1em 0;
+    padding: 2.9em 0;
+    width: 100%;
+    background-repeat: no-repeat;
+
+
 }
 
 /* ==============
@@ -225,7 +265,7 @@ nav a:hover {
     WIDE: CSS3 Effects
    ==================== */
 
-    .header-container,
+    
     .main aside {
         -webkit-box-shadow: 0 5px 10px #aaa;
            -moz-box-shadow: 0 5px 10px #aaa;
@@ -267,7 +307,7 @@ nav a:hover {
    =============== */
 
     .wrapper {
-        width: 1000px; /* 1140px - 10% for margins */
+        width: 900px; /* 1140px - 10% for margins */
         margin: 0 auto;
     }
 }
@@ -403,4 +443,86 @@ nav a:hover {
     h3 {
         page-break-after: avoid;
     }
+}
+
+/*//// */
+
+#ex3 {
+
+    line-height: 0px;
+    color: transparent; 
+    font-size: 50px; 
+    font-weight: 300; 
+    overflow: hidden;
+    -webkit-transition: all 0.5s ease; 
+    -moz-transition: all 0.5s ease; 
+    -o-transition: all 0.5s ease; 
+    position:relative;
+    progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#000', endColorstr='#000');
+   -ms-filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#000', endColorstr='#000');
+}
+
+
+ #ex3:hover
+  { 
+    line-height: 30px;
+    color: #FFF;
+        position:relative;
+  }
+  #ex3 img
+  { 
+    float: left;
+    margin: 0 15px;
+    box-shadow: 0px 0px 15px #000; /* Sombra */
+    padding:0;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+   }
+
+   
+
+#ex3 .textoo 
+{
+    background: rgba(0,0,0,0.5);
+    border-left: 20px solid rgb(107, 171, 248);
+    display: inline;
+    font-size: 12px;
+    font-weight: bold;
+    left:70%;
+    position:absolute;
+
+}
+#ex3 .textoo h1{
+    font-size: 19px;
+    text-align: center;
+}
+
+#ex3 img:hover {
+border-radius: 0; /* Con esto eliminamos el borde redondeado */
+-moz-transition: all 1s;
+-webkit-transition: all 1s;
+-o-transition: all 1s;
+cursor:pointer;
+-o-transform: scale(1.2) translateX(50px);
+-ms-transform: scale(1.2) translateX(50px);
+-moz-transform: scale(1.2) translateX(50px);
+-webkit-transform: scale(1.2) translateX(50px);
+transform: scale(1.2) translateX(50px);
+}
+#ex3:hover{
+line-height: 32px;
+}
+
+#calidad
+{
+    background: white;
+    color: #222;
+    text-align: left;
+    margin: 20px 34px;
+}
+#calidad, #inicio
+{
+    display: inline-block;
+    vertical-align: top;
 }
