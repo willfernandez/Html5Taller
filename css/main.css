@@ -14,6 +14,7 @@ body {
     font-family:'Yanone Kaffeesatz', sans-serif;
     font-size: 1em;
     line-height: 1.4;
+    text-align: justify;
 }
 
 ::-moz-selection {
@@ -215,11 +216,6 @@ nav a:hover {
 
 
 
-
-
-
-
-
 /* ==========================================================================
    Media Queries
    ========================================================================== */
@@ -229,7 +225,10 @@ nav a:hover {
 /* ====================
     INTERMEDIATE: Menu
    ==================== */
-
+        .menus{
+            width: 40%;
+            margin: 0 auto;
+        }
     nav a {
         float: left;
         width: 27%;
@@ -256,6 +255,11 @@ nav a:hover {
 
     .oldie nav a {
         margin: 0 0.7%;
+    }
+
+    .menus{
+        width: 900px;
+        margin: 0 auto;
     }
 }
 
@@ -310,6 +314,7 @@ nav a:hover {
         width: 900px; /* 1140px - 10% for margins */
         margin: 0 auto;
     }
+
 }
 
 /* ==========================================================================
